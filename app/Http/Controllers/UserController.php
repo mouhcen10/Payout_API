@@ -16,7 +16,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return UserResource::collection(User::where('id', 5)->with('payouts')->get());
+        return UserResource::collection(User::where('id', 1)->with('payouts')->get());
     }
 
     /**
